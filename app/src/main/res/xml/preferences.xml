@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Notifications"
+        android:key="notification_setting">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_notification_key"
+            android:title="@string/pref_notification_title" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_toast_key"
+            android:title="@string/pref_toast_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

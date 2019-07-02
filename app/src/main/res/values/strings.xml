@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name" translatable="false">KosturIspit</string>
+    <string name="pref_notification_key">notification</string>
+    <string name="pref_notification_title">Show notifications</string>
+    <string name="pref_toast_key" translatable="false">toast</string>
+    <string name="pref_toast_title">Show toast messages</string>
+    <string name="details_name">Name</string>
+    <string name="details_surname">Surname</string>
+    <string name="details_rating">Rating:</string>
+    <string name="details_bio" translatable="false">BIO:</string>
+    <string name="placeholder">placeholder</string>
+    <string name="date_of_birth">Date of birth</string>
+</resources>

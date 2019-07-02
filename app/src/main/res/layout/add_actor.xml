@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="10dp"
+    android:text="Add new actor"
+    android:textSize="30sp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/ib_add_actor"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/et_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter actor's first name here..."
+            android:inputType="textCapSentences"/>
+        <EditText
+            android:id="@+id/et_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter actor's last name here..."
+            android:inputType="textCapSentences"/>
+        <EditText
+            android:id="@+id/et_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter actor's rating here..."
+            android:inputType="numberDecimal"/>
+
+    </LinearLayout>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of birth:" />
+    <EditText
+        android:id="@+id/et_date_birth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DD - MM - YYYY"/>
+</LinearLayout>
+
+<EditText
+    android:id="@+id/et_biography"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter short biography here..."/>
+<Button
+    android:id="@+id/btn_add_actor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="ADD ACTOR"
+    android:textStyle="bold"/>
+
+</LinearLayout>

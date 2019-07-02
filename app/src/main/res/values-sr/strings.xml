@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_notification_key">notifikacija</string>
+    <string name="pref_notification_title">Prikaži notifikacije</string>
+    <string name="pref_toast_title">Prikaži toast poruke</string>
+    <string name="details_name">Ime</string>
+    <string name="details_surname">Prezime</string>
+    <string name="details_rating">Ocena:</string>
+    <string name="placeholder">placeholder</string>
+    <string name="date_of_birth">Datum rodjenja</string>
+</resources>
