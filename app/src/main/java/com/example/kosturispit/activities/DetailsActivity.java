@@ -59,10 +59,10 @@ public class DetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
-        fillData();
-        setupDrawer();
         setupToolbar();
         getAndSetData(getIntent());
+        fillData();
+        setupDrawer();
     }
 
     //Pocetak setup-a za toolbar
@@ -180,6 +180,7 @@ public class DetailsActivity extends AppCompatActivity {
         };
     }
 
+
     private void editActor(){
         Intent intent = new Intent(DetailsActivity.this, EditActor.class);
         intent.putExtra("glumac_id",glumac.getId());
@@ -192,8 +193,8 @@ public class DetailsActivity extends AppCompatActivity {
             List<Film> filmovi = getDatabaseHelper().getmMovieDao().queryForEq("glumac_id", glumac.getId());
 
             getDatabaseHelper().getGlumacDao().delete(glumac);
-            for(Film movie:filmovi) {
-                getDatabaseHelper().getmMovieDao().delete(movie);
+            for(Film film:filmovi) {
+                getDatabaseHelper().getmMovieDao().delete(film);
             }
         } catch (SQLException e) {
             e.printStackTrace();

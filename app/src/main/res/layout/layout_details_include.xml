@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/ib_detalji_glumca"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/f_detalji_glumca_linearlayout_podaci"
+        android:layout_marginLeft="130dp"
+        app:layout_constraintLeft_toRightOf="@id/ib_detalji_glumca"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_ime_f_detalji_glumca"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="@string/app_name"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/ib_detalji_glumca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_prezime_f_detalji_glumca"
+            android:textSize="20sp"
+
+            android:textStyle="bold"
+            android:text="@string/app_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_ime_f_detalji_glumca"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/ib_detalji_glumca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_rodjen_f_detalji_glumca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Rodjen: "
+            android:textSize="15sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toRightOf="@id/ib_detalji_glumca"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_prezime_f_detalji_glumca" />
+
+        <TextView
+            android:id="@+id/tv_rating_detalji_glumca"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            app:layout_constraintTop_toBottomOf="@id/tv_rodjen_f_detalji_glumca"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/ib_detalji_glumca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/biografija_text"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        android:text="Biografija:"
+        app:layout_constraintTop_toBottomOf="@id/f_detalji_glumca_linearlayout_podaci"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_biografija_f_detalji_glumca"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        android:text="Biografija:"
+        app:layout_constraintTop_toBottomOf="@id/biografija_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/tv_biografija_f_detalji_glumca"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ListView
+            android:id="@+id/lv_filmovi_f_detalji_glumca"
+            android:layout_width="match_parent"
+            android:layout_height="339dp"
+            android:clickable="false"
+            android:padding="10dp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
